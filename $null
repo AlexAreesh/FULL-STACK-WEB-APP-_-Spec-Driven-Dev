@@ -1,0 +1,8 @@
+Switched to a new branch '001-frontend-spec'
+New-Item : The file 'C:\Users\hp\specs\001-frontend-spec\spec.md' already exists.
+At C:\Users\hp\speckit-project\fullstackwebapp_TODO\.specify\scripts\powershell\create-new-feature.ps1:262 char:5
++     New-Item -ItemType File -Path $specFile | Out-Null
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\hp\spe...nd-spec\spec.md:String) [New-Item], IOException
+    + FullyQualifiedErrorId : NewItemIOError,Microsoft.PowerShell.Commands.NewItemCommand
+ 
