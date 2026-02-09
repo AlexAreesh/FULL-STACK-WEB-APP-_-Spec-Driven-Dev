@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Add subtle letter-spacing on headings as specified in design */
+  .heading {
+    @apply font-semibold;
+    letter-spacing: -0.025em;
+  }
+  
+  /* Micro-interactions */
+  .btn-hover {
+    @apply transition-transform duration-200 ease-in-out;
+  }
+  
+  .btn-hover:hover {
+    @apply scale-105 opacity-100;
+  }
+  
+  .checkbox-bounce {
+    @apply transition-transform duration-300 ease-out;
+  }
+  
+  .checkbox-bounce:checked {
+    @apply scale-110;
+  }
+  
+  .pulse-focus {
+    @apply animate-pulse;
+  }
+}
